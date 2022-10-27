@@ -13,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Link to <a href={process.env.BASE_URL}>dev.api.botinow.com!</a>
+          Link to <a href={process.env.BASE_URL}>apple.com!</a>
         </h1>
 
         <p className={styles.description}>

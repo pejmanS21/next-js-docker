@@ -10,3 +10,9 @@ $ bash builder.sh
 ...
 $ bash deploy.sh
 ```
+
+## docker-compose 
+
+```bash
+$ docker compose up -d --build
+```

@@ -25,7 +25,7 @@ ENV BASE_URL=$BASE_URL
 
 ENV NODE_ENV production
 # If you are using a custom next.config.js file, uncomment this line.
-# COPY --from=builder /my-project/next.config.js ./
+COPY --from=builder /my-project/next.config.js ./
 COPY --from=builder /my-project/public ./public
 COPY --from=builder /my-project/.next ./.next
 COPY --from=builder /my-project/node_modules ./node_modules

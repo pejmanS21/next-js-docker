@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  hello-next:
+    container_name: 'hello-next-test'
+    domainname: 'hello-next-test'
+    build:
+        context: .
+        args:
+          BASE_URL: https://apple.com
+    image: hello-next-test:peji
+    ports:
+      - 3000:3000
+    env_file:
+      - .env.local
